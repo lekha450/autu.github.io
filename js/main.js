@@ -122,8 +122,25 @@ hamburger.addEventListener("click", () => {
 
 
 
+
+var slide_count='' ;
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    slide_count=1;
+    console.log(slide_count)
+  }
+  else{
+    slide_count=2;
+    console.log(slide_count)
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: slide_count,
   spaceBetween: 30,
   smartSpeed: 250,
   freeMode: true,
