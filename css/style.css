@@ -4408,6 +4408,14 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
+.card-search {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  height: 100%;
+  display: flex;
+}
+
 .card .card-cat{
   flex: 1 1 auto;
   min-height: 1px;
