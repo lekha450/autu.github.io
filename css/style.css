@@ -4407,6 +4407,16 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
+.card-cat{
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
 .card-title {
   margin-bottom: 0.75rem;
 }
@@ -9806,8 +9816,6 @@ select::-ms-expand {
     }
 
     .select {
-
-
         margin-bottom: 17px;
         margin-right: 0px;
     }
@@ -9845,8 +9853,11 @@ select::-ms-expand {
   height: 100%;
   display: flex;
 }
-.card-body p{
+.card-cat p{
   color:#34495e;
+}
+.card-cat img{
+  width: 150px;
 }
 
 .category-box {
