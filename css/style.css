@@ -9839,6 +9839,7 @@ select::-ms-expand {
 .swiper {
   width: 100%;
   height: 100%;
+  box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 1px;
 }
 
 .swiper-slide {
