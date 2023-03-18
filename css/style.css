@@ -9811,8 +9811,8 @@ select::-ms-expand {
         margin-bottom: 17px;
         margin-right: 0px;
     }
-    .logo{
-      width: 86px;
+    .wislist{
+      display: none;
     }
 }
 
