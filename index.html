@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Testing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+     
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid top-nav">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
+            <div class="search-box">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="cart">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+            <div class="linksbar">
+                <div id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-2">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-light" style="font-size: 12px;">
+                        <li class="breadcrumb-item"><a href="#"><i class="fas fa-home text-red"></i></a></li>
+                        <li class="breadcrumb-item"><a href="#" class="text-dark"> MARUTI parts </a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">Maintenance Service Parts </li>
+                        <li class="breadcrumb-item active" aria-current="page">MARUTI Maintenance Service Parts </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar End -->
+
+
+    <!-- main section -->
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form class="card card-sm">
+                    <div class="card-body row no-gutters align-items-center">
+                        <div class="col-auto">
+                            <!-- <i class="fa fa-search h4 text-body"> </i> -->
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="col">
+                            <input class="form-control form-control-lg form-control-borderless" type="search"
+                                placeholder="Find Parts?">
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-lg btn-red" type="submit"> Search </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+   
+
+
+
+    <!-- end section -->
+
+
+
+    <!-- slider section start  -->
+
+    <div class="container mt-5" style="position: relative;">
+        <!-- <h2>Current Offers</h2> -->
+
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="silder-img"><img src="img/2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="silder-img"><img src="img/3.jpg" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination" style="position: static;"></div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="heading">
+            <h3> <span style="color:#34495e;">Search</span> by <span>Vehicle</span></h3>
+        </div>
+
+        <form action="">
+            <div class="model-box">
+                <div class="select">
+                    <select>
+                        <option value="">Car Maker</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select>
+                        <option value="">Model Line</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select>
+                        <option value="">Year</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select>
+                        <option value="">Modification</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <button class="btn btn-red">SEARCH PARTS</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="heading">
+            <h3> <span style="color:#34495e;">Search</span> by <span>Category</span></h3>
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-3 category-box">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body ">
+                        <img src="img/vendor-1.jpg" alt="">
+                        <p>this is a photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 category-box">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <img src="img/vendor-1.jpg" alt="">
+                        <p>this is a photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 category-box">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <img src="img/vendor-1.jpg" alt="">
+                        <p>this is a photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 category-box">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <img src="img/vendor-1.jpg" alt="">
+                        <p>this is a photo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 mt-4">
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-1.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-2.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-3.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-4.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-5.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-6.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-7.jpg" alt="">
+                    </div>
+                    <div class="bg-light p-4">
+                        <img src="img/vendor-8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-footer mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
+                </a>
+                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum
+                    dolore amet erat.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+917610862677</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Popular Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class=" mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
+                                Services</a>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Useful Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms of use</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy policy</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name"
+                                    required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-red btn-block border-0 py-3" type="submit">Subscribe
+                                    Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left ">
+                    &copy; <a class=" font-weight-semi-bold" href="#">Shreeautoparts</a>. All Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <<<<<<< Updated upstream=======<!-- Template Javascript -->
+        >>>>>>> Stashed changes
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
