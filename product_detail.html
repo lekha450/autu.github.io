@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Testing</title>
+    <title>product detail</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Google Web Fonts -->
@@ -17,9 +17,12 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">
+
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet">
     <style>
-     
+
     </style>
 </head>
 
@@ -78,7 +81,7 @@
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
-              
+
             </div>
 
         </div>
@@ -89,183 +92,83 @@
     <!-- main section -->
 
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <form class="card-search card-sm">
-                    <div class="card-body row no-gutters align-items-center">
-                        <div class="col-auto">
-                            <!-- <i class="fa fa-search h4 text-body"> </i> -->
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="col">
-                            <input class="form-control form-control-lg form-control-borderless" type="search"
-                                placeholder="Find Parts?">
-                        </div>
-                        <div class="col-auto">
-                            <button class="btn btn-lg btn-red" type="submit"> Search </button>
+
+    <section id="aa-product-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-product-details-area">
+                        <div class="aa-product-details-content">
+                            <div class="row">
+                                <!-- Modal view slider -->
+                                <div class="col-md-5 col-sm-5 col-xs-12">
+                                    <div class="aa-product-view-slider">
+                                        <div id="demo-1" class="simpleLens-gallery-container">
+                                            <div class="simpleLens-container">
+                                                <div class="simpleLens-big-image-container">
+                                                    <a data-lens-image="img/2.jpg" class="simpleLens-lens-image"><img
+                                                            src="img/2.jpg" class="simpleLens-big-image">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="aa-prod-view-bottom">
+                                        <a class="btn btn-red" href="#">Add To Cart</a>
+                                        <a class="btn btn-red" href="#">Buy</a>
+                                    </div>
+                                </div>
+
+                                <!-- Modal view content -->
+                                <div class="col-md-7 col-sm-7 col-xs-12">
+                                    <div class="aa-product-view-content">
+                                        <h3>Engine Oil 5W-30 (3.5L) Syntium 500</h3>
+                                        <div class="aa-price-block">
+                                            <span class="aa-product-view-price ml-0">₹1,399</span>
+                                            <span class="aa-product-view-mrp"> <del> MRP ₹2,015</del></span>
+                                            <span class="discount"> -31% </span>
+                                        </div>
+                                        <p class="aa-product-avilability">In stock</p>
+                                        <div class="aa-prod-quantity">
+                                            <p class="aa-product-brand">
+                                                Brand: <a href="#">BMW</a>
+                                            </p>
+                                        </div>
+                                        <div class="part-info-sec">
+                                            <div class="aa-modal-block">
+                                                <span class="aa-part-no sm-header">Part Number</span>
+                                                <span class="aa-part-info">ddxyzs2015</span>
+                                            </div>
+                                            <div class="aa-modal-block">
+                                                <span class="aa-part-no sm-header">Origin</span>
+                                                <span class="aa-part-info">Aftermarket</span>
+                                            </div>
+                                            <div class="aa-modal-block">
+                                                <span class="aa-part-no sm-header">Class</span>
+                                                <span class="aa-part-info">Engine Oil</span>
+                                            </div>
+                                        </div>
+                                        <div class="aa-prod-desciption">
+                                            <h5>Description</h5>
+                                            <p class="">
+                                                Engine Oil for ASHOK LEYLAND, BMW, CHEVROLET, DAEWOO, DATSUN, FORD,
+                                                HONDA, HYUNDAI, JAGUAR, LAMBORGHINI, LAND ROVER - PET5W3...N50035 -
+                                                Petronas - details are
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-
         </div>
-    </div>
+    </section>
+
 
 
     <!-- end section -->
-
-    <!-- slider section start  -->
-
-    <div class="container mt-5" style="position: relative;">
-        <!-- <h2>Current Offers</h2> -->
-
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/2.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/3.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination" style="position: static;"></div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-
-        <div class="heading">
-            <h3> <span style="color:#34495e;">Search</span> by <span>Vehicle</span></h3>
-        </div>
-
-        <form action="">
-            <div class="model-box">
-                <div class="select">
-                    <select>
-                        <option value="">Car Maker</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Model Line</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Year</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Modification</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <button class="btn btn-red">SEARCH PARTS</button>
-            </div>
-        </form>
-
-    </div>
-
-    <div class="container mt-5">
-        <div class="heading">
-            <h3> <span style="color:#34495e;">Search</span> by <span>Category</span></h3>
-        </div>
-        <div class="row mt-3">
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/mservicsparts.jpg" alt="">
-                        <p class="text-center"> Maintenance Service Parts </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/air.jpg" alt="">
-                        <p class="text-center"> Air Conditioning </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/chan.jpg" alt="">
-                        <p class="text-center"> Belts Chains and Rollers </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/Bearings.jpg" alt="">
-                        <p class="text-center">Bearings</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 mt-4">
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="owl-carousel vendor-carousel">
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-1.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-2.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-3.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-4.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-5.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-6.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-7.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-8.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-
-
 
 
     <!-- Footer Start -->
@@ -275,7 +178,7 @@
                 <a href="" class="text-decoration-none">
                     <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
                 </a>
-                
+
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE
                     KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>
@@ -342,11 +245,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- leans  -->
+    <script type="text/javascript" src="js/jquery.simpleGallery.js"></script> <!--imp-->
+    <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
     <!-- <script src="lib/easing/easing.min.js"></script> -->
-    <<<<<<< Updated upstream=======<!-- Template Javascript -->
-        >>>>>>> Stashed changes
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

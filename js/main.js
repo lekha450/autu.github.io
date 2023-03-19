@@ -180,3 +180,14 @@ $('.vendor-carousel').owlCarousel({
 });
 
 
+// product-detail 
+
+jQuery(function($){
+  jQuery('#demo-1 .simpleLens-thumbnails-container img').simpleGallery({
+      loading_image: 'demo/images/loading.gif'
+  });
+
+  jQuery('#demo-1 .simpleLens-big-image').simpleLens({
+      loading_image: 'demo/images/loading.gif'
+  });
+});

@@ -19,7 +19,52 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-     
+     .container-b-shadow {
+            
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+           
+            display: flex;
+        }
+
+
+        .login-btn {
+            margin: 8px 0;
+            width: 100%;
+            border: 2px solid gainsboro;
+        }
+
+        .content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+       .login-input input {
+            background-color: #eee;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        .login-main_contain {
+            height: 514px;
+        }
+        .p-card{
+            padding: 132px 112px;
+        }
+
+        @media (max-width: 768px){
+            .p-card{
+            padding: 11px 11px;
+        }
+        .login-main_contain {
+    height: 353px;
+}
+        }
     </style>
 </head>
 
@@ -59,9 +104,10 @@
             <div class="cart">
                 <div class="dropdown">
                     <!-- <button class="dropbtn">Dropdown</button> -->
-                    <a href="javascript:void(0)" class="btn border dropbtn">
+                    <a href="javascript:void(0)"" class="btn border dropbtn">
                         <i class="fas fa-user text-primary"></i>
                         <i class="fa fa-caret-down"></i>
+
                     </a>
                     <div class="dropdown-content">
                         <a href="#"> My Orders </a>
@@ -84,190 +130,70 @@
         </div>
 
     </div>
-    <!-- Topbar End -->
-
-    <!-- main section -->
 
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <form class="card-search card-sm">
-                    <div class="card-body row no-gutters align-items-center">
-                        <div class="col-auto">
-                            <!-- <i class="fa fa-search h4 text-body"> </i> -->
-                            <i class="fa fa-search"></i>
+   
+
+    <section>
+        <div class="container mt-5 container-b-shadow">
+          
+
+                    <div class="row g-0 login-main_contain">
+                        <div class="col-xl-4 d-none d-xl-block top-nav">
+                            <div class="content">
+
+                                <img class="img-left" src="img/engine.png" alt="Sample photo" class="img-fluid" />
+                                <h4>Enter the best car spare parts marketplace in India</h4>
+                                <p>With our advanced search functionality you can easily find any spare part for your car</p>
+                            </div>
+
                         </div>
-                        <div class="col">
-                            <input class="form-control form-control-lg form-control-borderless" type="search"
-                                placeholder="Find Parts?">
+                        <div class="col-xl-8">
+                            <div class="card-body p-card text-black">
+
+                                <div class="row">
+
+                                    <div class="col-md-12 mb-3 ">
+                                        <h1 class=" d-flex justify-content-center">Sign in</h1>
+                                        <span class=" d-flex justify-content-center">Use either your email or a verified
+                                            phone number</span>
+
+                                        <div class="form-outline login-input">
+                                            <input type="email" placeholder="Email"
+                                                class="form-control form-control-lg" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button type="button" class="login-btn btn btn-red form-control">Submit</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                           
                         </div>
-                        <div class="col-auto">
-                            <button class="btn btn-lg btn-red" type="submit"> Search </button>
-                        </div>
                     </div>
-                </form>
-            </div>
 
+            
         </div>
-    </div>
-
-
-    <!-- end section -->
-
-    <!-- slider section start  -->
-
-    <div class="container mt-5" style="position: relative;">
-        <!-- <h2>Current Offers</h2> -->
-
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/2.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/3.jpg" alt=""></div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="silder-img"><img src="img/1.jpg" alt=""></div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination" style="position: static;"></div>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-
-        <div class="heading">
-            <h3> <span style="color:#34495e;">Search</span> by <span>Vehicle</span></h3>
-        </div>
-
-        <form action="">
-            <div class="model-box">
-                <div class="select">
-                    <select>
-                        <option value="">Car Maker</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Model Line</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Year</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <div class="select">
-                    <select>
-                        <option value="">Modification</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                </div>
-                <button class="btn btn-red">SEARCH PARTS</button>
-            </div>
-        </form>
-
-    </div>
-
-    <div class="container mt-5">
-        <div class="heading">
-            <h3> <span style="color:#34495e;">Search</span> by <span>Category</span></h3>
-        </div>
-        <div class="row mt-3">
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/mservicsparts.jpg" alt="">
-                        <p class="text-center"> Maintenance Service Parts </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/air.jpg" alt="">
-                        <p class="text-center"> Air Conditioning </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/chan.jpg" alt="">
-                        <p class="text-center"> Belts Chains and Rollers </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 category-box">
-                <div class="card" style="width: 15rem;">
-                    <div class="card-cat">
-                        <img src="img/Bearings.jpg" alt="">
-                        <p class="text-center">Bearings</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </section>
 
 
 
 
 
 
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 mt-4">
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="owl-carousel vendor-carousel">
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-1.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-2.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-3.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-4.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-5.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-6.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-7.jpg" alt="">
-                    </div>
-                    <div class="bg-light p-4">
-                        <img src="img/vendor-8.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
 
 
 
 
+
+
+
+
+
+
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-footer mt-5 pt-5">
         <div class="row px-xl-5 pt-5">
@@ -275,7 +201,8 @@
                 <a href="" class="text-decoration-none">
                     <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
                 </a>
-                
+                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum
+                    dolore amet erat.</p>
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE
                     KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>
