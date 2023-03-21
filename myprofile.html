@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>product detail</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">
+
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .btn-profile {
+            background: #2553b8 !important;
+            border-color: #2553b8 !important;
+            color: #fff;
+        }
+
+        .profile-heading {
+            font-weight: 400;
+            font-family: "Poppins", Arial, sans-serif;
+            color: #000;
+            font-size: 17px;
+        }
+
+        .contactForm .form-control {
+            border: 1px solid #c9c7c7;
+        }
+
+        .form-control {
+            height: 44px;
+            background: #fff;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 14px;
+            border-radius: 2px;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: none;
+        }
+        .profile-link{
+            color: #2553b8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid top-nav">
+        <div class="header">
+            <div class="linksbar">
+                <div id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
+            <div class="search-box">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="cart">
+                <div class="dropdown">
+                    <!-- <button class="dropbtn">Dropdown</button> -->
+                    <a href="javascript:void(0)" class="btn border dropbtn">
+                        <i class="fas fa-user text-primary"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#"> My Orders </a>
+                        <a href="#"> My Profile</a>
+                        <a href="#"> Addresses </a>
+                        <a href="#"> My Wishlists </a>
+                    </div>
+                </div>
+                <a href="" class="btn border wislist">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Topbar End -->
+
+    <!-- main section -->
+
+    <section class="">
+        <div class="container">
+
+            <!-- <div class="row justify-content-center"> -->
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-12">
+                            <div class="w-100 p-md-5 p-4">
+                                <h3 class="mb-4">Personal Information</h3>
+
+                                <form method="POST" class="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name"
+                                                    placeholder="Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="name" placeholder="State">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control" name="name" placeholder="91-">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="submit" class="btn btn-profile" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Email.........">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-3">
+                                            <a href="#" class="profile-link">Unlike phone Number</a>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <a href="#" class="profile-link">Notification Performance</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="">
+
+                                                <input type="submit" class="btn btn-profile" value="Change password"
+                                                    name="name" id="name">
+
+
+                                                <input type="submit" class="btn btn-success" value="save" name="name"
+                                                    id="name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <h3 class="profile-heading">Account Type</h3>
+                                        <div class="select-box" style="width: 220px">
+                                            <select id='mySelect' onchange="getvalue(this.value)" class="form-control">
+                                                <option value='home'>Home</option>
+                                                <option value='without_gst'>Business Without GST</option>
+                                                <option value='with_gst'>Business With GST</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <div class="col-md-3"> -->
+
+                                    <!-- </div> -->
+                                    <div class="col-md-6" style="display: none;" id="without_gst">
+                                        <div class="row" id="form_box">
+
+                                            <div class="col-md-6">
+                                                <div id="myList" style="display: none;">
+                                                    <h3 class="profile-heading">GST Number</h3>
+                                                    <div class='form-group'>
+                                                        <input type='number' class='form-control' name='name' id='gst'
+                                                            placeholder='GST Number'>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h3 class="profile-heading">Contacts</h3>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Company Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" name="name" id="name"
+                                                        placeholder="Mobile">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <h3 class="profile-heading">Address</h3>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="20"
+                                                        rows="2" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Pincode">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <select class="form-control" id="inputGroupSelect01">
+                                                        <option selected>State</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                        placeholder="city">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                        placeholder="Address Title(option)">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="email" id="email"
+                                                        placeholder="Address Title(option)">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="button" class="btn btn-success" value="save">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <script>
+                                        function getvalue(val) {
+                                            if (val == "without_gst") {
+                                                const message = document.getElementById('without_gst').style.display = "block";
+                                            }
+                                            else if (val == "with_gst") {
+                                                const profile = document.getElementById('myList').style.display = "block";
+                                                const message = document.getElementById('without_gst').style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- end section -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-footer mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
+                </a>
+
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE
+                    KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+917610862677</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Popular Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class=" mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our
+                                Services</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Useful Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms of use</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy policy</a>
+                            <a class=" mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold  mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name"
+                                    required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-red btn-block border-0 py-3" type="submit">Subscribe
+                                    Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left ">
+                    &copy; <a class=" font-weight-semi-bold" href="#">Shreeautoparts</a>. All Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- leans  -->
+    <script type="text/javascript" src="js/jquery.simpleGallery.js"></script> <!--imp-->
+    <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <!-- Template Javascript -->
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

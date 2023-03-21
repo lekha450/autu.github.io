@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Testing</title>
+    <title>product detail</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Google Web Fonts -->
@@ -17,15 +17,46 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">
+
+    <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .ftco-section {
-            /* background-color: #fff;
-			border-radius: 10px; */
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-            /* height: 100%;
-			display: flex;
-            margin-top: 50px; */
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
         }
     </style>
 </head>
@@ -66,10 +97,9 @@
             <div class="cart">
                 <div class="dropdown">
                     <!-- <button class="dropbtn">Dropdown</button> -->
-                    <a href="javascript:void(0)"" class=" btn border dropbtn">
+                    <a href="javascript:void(0)" class="btn border dropbtn">
                         <i class="fas fa-user text-primary"></i>
                         <i class="fa fa-caret-down"></i>
-
                     </a>
                     <div class="dropdown-content">
                         <a href="#"> My Orders </a>
@@ -92,117 +122,46 @@
         </div>
 
     </div>
+    <!-- Topbar End -->
+
+    <!-- main section -->
+
+    <div class="container">
+        <h2 id="tab_heading">Tabs</h2>
 
 
-
-
-
-    <section>
-        <div class="container ftco-section mt-5">
-
-            
-            <div class="col-md-12">
-                <div class="wrapper">
-                    <div class="row no-gutters mb-5">
-                        <div class="col-md-12">
-                            <div class="w-100 p-md-5 p-4">
-                                <h3 class="mb-4">Shipping Address</h3>
-                                <div id="form-message-success" class="mb-4">
-                                    Your message was sent, thank you!
-                                </div>
-                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="Full Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="number" class="form-control" name="email" id="email"
-                                                    placeholder="Mobile">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control" id="message" cols="20"
-                                                    rows="2" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- </div>
-											<div class="row"> -->
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="Pincode">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="City">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <select class="form-control" id="inputGroupSelect01">
-                                                    <option selected>State</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="email" id="email"
-                                                    placeholder="India">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="email" id="email"
-                                                    placeholder="Address Title(option)">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <input type="submit" value="Save" class="btn btn-red">
-                                                <div class="submitting"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'my_order')">My Orders</button>
+            <button class="tablinks" onclick="openCity(event, 'my_profile')">My Profile</button>
+            <button class="tablinks" onclick="openCity(event, 'addresses')">Addresses</button>
+            <button class="tablinks" onclick="openCity(event, 'my_wishlists')">My Wishlists</button>
+            <button class="tablinks" onclick="openCity(event, 'my_garage')">My Garage</button>
         </div>
- 
-    </section>
+
+        <div id="my_order" class="tabcontent">
+            <p>my order</p>
+        </div>
+
+        <div id="my_profile" class="tabcontent">
+            <p>my_profile</p>
+        </div>
+
+        <div id="addresses" class="tabcontent">
+            <p>addresses</p>
+        </div>
+        <div id="my_wishlists" class="tabcontent">
+            <p>my_wishlists</p>
+        </div>
+        <div id="my_garage" class="tabcontent">
+            <p>my_garage</p>
+        </div>
+    </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+    <!-- end section -->
 
 
     <!-- Footer Start -->
@@ -212,8 +171,7 @@
                 <a href="" class="text-decoration-none">
                     <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
                 </a>
-                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum
-                    dolore amet erat.</p>
+
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE
                     KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>
@@ -280,11 +238,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- leans  -->
+    <script type="text/javascript" src="js/jquery.simpleGallery.js"></script> <!--imp-->
+    <script type="text/javascript" src="js/jquery.simpleLens.js"></script>
     <!-- <script src="lib/easing/easing.min.js"></script> -->
-    <<<<<<< Updated upstream=======<!-- Template Javascript -->
-        >>>>>>> Stashed changes
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Template Javascript -->
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          let tab_hading = document.getElementsByClassName("tab_heading");
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 </body>
 
 </html>

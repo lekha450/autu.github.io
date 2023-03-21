@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>product detail</title>
@@ -21,7 +22,168 @@
     <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet">
     <style>
+        .shipping-info {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 3px 10px #ebebeb;
+            padding: 12px;
+        }
 
+        .c-shipping-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .same-style {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .c-black {
+            color: black;
+            font-size: 13px;
+        }
+
+        .s-product-container {
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            margin-top: 0px;
+            box-shadow: 0 3px 10px #ebebeb;
+
+        }
+
+        .detail-main {
+            display: flex;
+
+        }
+
+        .prod-info-box {
+            color: black;
+            width: 100%;
+        }
+
+        .prod-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prod-name p {
+            margin: 0px;
+        }
+
+        .prod-name span {
+            font-size: 10px;
+            color: #555555;
+        }
+
+        .prod-img-box {
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .prod-img-box img {
+            width: 109px;
+        }
+
+        .prod-order-footer {
+            display: flex;
+            margin-top: 48px;
+            border-top: 1px solid #c6c5c5;
+            padding-top: 17px;
+        }
+
+        .prod-time-sort {
+            display: flex;
+        }
+
+        .amt-delevry {
+            margin-left: 580px;
+        }
+
+        .same-s {
+            font-size: 20px;
+            margin-left: 130px;
+        }
+
+        .grant-total-box {
+            display: flex;
+            box-shadow: 0 3px 10px #ebebeb;
+            padding: 12px;
+        }
+
+        .order-total__info__item {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        .order-total__info {
+            margin-left: 789px;
+            width: 100%;
+            
+        }
+        .text-smal{
+            font-size: 11px;
+        }
+        .grand-box{
+            font-weight: 600;
+            color: black;
+        }
+        .grand-total-box{
+            border-top: 1px solid rgb(106, 105, 105);
+        }
+        .btn-section{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 3px 10px #ebebeb;
+            padding: 12px;
+
+        }
+
+
+        
+@media screen and (max-width: 768px) {
+    .amt-delevry {
+    margin-left: 0px;
+}
+.order-total__info {
+    margin-left: 0px;
+    
+}
+.same-s {
+    font-size: 20px;
+    margin-left: 0px;
+}
+.prod-time-sort {
+    flex-direction: column;
+}
+.qyt-box{
+    order: 1;
+}
+.brand{
+    order: 1;
+}
+.prod-content {
+   flex-direction: column;
+}
+.prod-info-box{
+    padding-left: 8px;
+}
+
+
+.c-shipping-info {
+    display: flex;
+    align-items: start;
+    /* justify-content: space-between; */
+    flex-direction: column;}
+
+}
     </style>
 </head>
 
@@ -87,83 +249,102 @@
 
     </div>
     <!-- Topbar End -->
-
     <!-- main section -->
 
+    <div class="container mt-5">
+        <div class="shipping-info">
+            <h3>Shipping to</h3>
+            <div class="c-shipping-info">
 
+                <div class="ship-adderss-box same-style">
+                    <span class="sm-header">Shipping address</span>
+                    <span class="customer-adderss c-black">lekha raj - 9602684378 shrimadhopur, RAJASTHAN, Reengus,
+                        332715</span>
+                </div>
+                <div class="ship-order-box same-style">
+                    <span class="sm-header">Order No</span>
+                    <span class="order-no c-black">1679304253-9628</span>
+                </div>
+                <div class="ship-status-box same-style">
+                    <span class="sm-header">Status</span>
+                    <span class="status c-black">Accepted</span>
+                </div>
 
-    <section id="aa-product-details">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-product-details-area">
-                        <div class="aa-product-details-content">
-                            <div class="row">
-                                <!-- Modal view slider -->
-                                <div class="col-md-5 col-sm-5 col-xs-12">
-                                    <div class="aa-product-view-slider">
-                                        <div id="demo-1" class="simpleLens-gallery-container">
-                                            <div class="simpleLens-container">
-                                                <div class="simpleLens-big-image-container">
-                                                    <a data-lens-image="img/2.jpg" class="simpleLens-lens-image"><img
-                                                            src="img/2.jpg" class="simpleLens-big-image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="aa-prod-view-bottom">
-                                        <a class="btn btn-red" href="#">Add To Cart</a>
-                                        <a class="btn btn-red" href="#">Buy</a>
-                                    </div>
-                                </div>
+            </div>
+        </div>
+        <div class="s-product-container">
+            <h5>Order Package #1679309063-1912-1</h5>
+            <div class="detail-main">
+                <div class="prod-img-box"><img src="img/1.jpg" alt="" style="width:100px;"></div>
+                <div class="prod-info-box">
 
-                                <!-- Modal view content -->
-                                <div class="col-md-7 col-sm-7 col-xs-12">
-                                    <div class="aa-product-view-content">
-                                        <h3>Engine Oil 5W-30 (3.5L) Syntium 500</h3>
-                                        <div class="aa-price-block">
-                                            <span class="aa-product-view-price ml-0">₹1,399</span>
-                                            <span class="aa-product-view-mrp"> <del> MRP ₹2,015</del></span>
-                                            <span class="discount"> -31% </span>
-                                        </div>
-                                        <p class="aa-product-avilability">In stock</p>
-                                        <div class="aa-prod-quantity">
-                                            <p class="aa-product-brand">
-                                                Brand: <a href="#">BMW</a>
-                                            </p>
-                                        </div>
-                                        <div class="part-info-sec">
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Part Number</span>
-                                                <span class="aa-part-info">ddxyzs2015</span>
-                                            </div>
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Origin</span>
-                                                <span class="aa-part-info">Aftermarket</span>
-                                            </div>
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Class</span>
-                                                <span class="aa-part-info">Engine Oil</span>
-                                            </div>
-                                        </div>
-                                        <div class="aa-prod-desciption">
-                                            <h5>Description</h5>
-                                            <p class="">
-                                                Engine Oil for ASHOK LEYLAND, BMW, CHEVROLET, DAEWOO, DATSUN, FORD,
-                                                HONDA, HYUNDAI, JAGUAR, LAMBORGHINI, LAND ROVER - PET5W3...N50035 -
-                                                Petronas - details are
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="prod-name">
+                        <p>Engine Oil 5W-30 (3.5L) Syntium 500</p>
+                        <span>PET5W3...N50035</span>
                     </div>
+                    <div class="prod-content">
+                        <div class="same-style brand">
+                            <span class="sm-header">brand:</span>
+                            <span class="status c-black">Petronas</span>
+                        </div>
+                        <div class="qyt-box">1 × ₹1,399</div>
+                        <div class="price-box">₹1,399</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="prod-order-footer">
+                <div class="prod-time-sort">
+                    <div class="same-style mr-3">
+                        <span class="sm-header">ESTIMATED DELIVERY</span>
+                        <span class="status c-black">23-03-2023</span>
+                    </div>
+                    <div class="same-style">
+                        <span class="sm-header">SOLD BY</span>
+                        <span class="status c-black">Jaipur/SWA</span>
+                    </div>
+                </div>
+                <div class="amt-delevry">
+                    <div class="Package-delivery">
+                        <span class="c-black">Package delivery</span>
+                        <span class="text-dark same-s">Free</span>
+                    </div>
+                    <div class="Package-Total">
+                        <span class="c-black">Package Total</span>
+                        <span class="text-dark same-s">₹1,399</span>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+
+
+        <div class="grant-total-box">
+            <div class="order-total__info">
+                <div class="order-total__info__item">
+                    <div class="order-total__info__title text-dark text-smal"> 1 item</div>
+                    <div class="order-total__info__value text-dark"> ₹1,399 </div>
+                </div>
+                <div class="order-total__info__item">
+                    <div class="order-total_title text-dark text-smal"> Delivery charge </div>
+                    <div class="order-total_value text-dark"> Free </div>
+                </div>
+                <div class="order-total__info__item grand-total-box ">
+                    <div class="order-total_title grand-box"> Grand Total </div>
+                    <div class="order-total_value text-dark"> ₹1,399 </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-section">
+            <button class="btn btn-red">view Order</button>
+            <button class="btn btn-red">Continue Shopping</button>
+        </div>
+
+
+
+    </div>
+
+
 
 
 
@@ -253,6 +434,7 @@
 
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

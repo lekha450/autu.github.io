@@ -19,7 +19,67 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-     
+        .testimonal-contener {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 24px 30px;
+
+        }
+
+        .test-slider-img {
+            height: 100%;
+        }
+
+        .member-review {
+            color: black;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .member-name {
+            color: black;
+            font-size: 26px;
+            font-weight: 900;
+        }
+
+        .member-img img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .member-test-info {
+            padding: 0px 15px;
+            border-top-right-radius: 10px;
+            border-right: 1px solid black;
+            border-bottom-right-radius: 10px;
+        }
+
+        .member-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid black;
+            padding-right: 12px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonal-contener {
+                padding: 9px 7px;
+                flex-direction: column;
+            }
+
+            .member-img {
+                border-right: none;
+            }
+
+            .member-test-info {
+                border-left: 1px solid black;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
     </style>
 </head>
 
@@ -78,7 +138,7 @@
                     <i class="fas fa-shopping-cart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
-              
+
             </div>
 
         </div>
@@ -265,6 +325,71 @@
     </div>
     <!-- Vendor End -->
 
+    <!-- testimonial section  -->
+    <div class="container">
+        <h3 class="text-center mb-3">Testimonial</h3>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="test-silder-img">
+                        <div class="testimonal-contener">
+                            <div class="member-img">
+                                <img class="tm-people"
+                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt="">
+                            </div>
+                            <div class="member-test-info">
+                                <div class="member-name">Balbir Kaur</div>
+                                <div class="member-review">&ldquo;At this School, our mission is to balance a rigorous
+                                    comprehensive college preparatory curriculum withhealthy social and emotional
+                                    development.&rdquo;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="test-silder-img">
+                        <div class="testimonal-contener">
+                            <div class="member-img">
+                                <img class="tm-people"
+                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt="">
+                            </div>
+                            <div class="member-test-info">
+                                <div class="member-name">Mukesh Jangid</div>
+                                <div class="member-review">&ldquo;
+                                    Services are very good on this portal.before some time i have purchased a parts
+                                    which was not available.so thanks for this portal.&rdquo;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="test-silder-img">
+                        <div class="testimonal-contener">
+                            <div class="member-img">
+                                <img class="tm-people"
+                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg" alt="">
+                            </div>
+                            <div class="member-test-info">
+                                <div class="member-name">Bonny Yadav</div>
+                                <div class="member-review">&ldquo;
+                                    I am from hariyana. before some time engine parts was not available in market but by
+                                    supporting this portal i got parts and my car was started.&rdquo;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="position: static;"></div>
+        </div>
+
+    </div>
+
+
+    <!-- testimonial section end  -->
+
 
 
 
@@ -275,7 +400,7 @@
                 <a href="" class="text-decoration-none">
                     <div class="logo"><a href="#"><img src="img/logo.png" alt="" class="logo"></a></div>
                 </a>
-                
+
                 <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mangiyawas, PLOT NO. 09, SHREE
                     KRISHNA VIHAR, Mangiyawas, Jaipur, Jaipur, Rajasthan, 302020</p>
                 <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>shreeautoparts@gmail.com</p>

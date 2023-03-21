@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>product detail</title>
@@ -21,7 +22,203 @@
     <link href="css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
     <link href="css/style.css" rel="stylesheet">
     <style>
+        .cart-same-style {
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-prod-name{
+            color: black;
+        }
 
+        .c-black {
+            color: black;
+            font-size: 13px;
+        }
+
+        .cart-product-container {
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            margin-top: 0px;
+            box-shadow: 0 3px 10px #ebebeb;
+
+        }
+
+        .cart-detail-main {
+            display: flex;
+
+        }
+
+        .cart-prod-info-box {
+            color: black;
+            width: 100%;
+        }
+
+
+        .cart-prod-name p {
+            margin: 0px;
+        }
+
+        .cart-prod-name span {
+            font-size: 10px;
+            color: #555555;
+        }
+
+        .cart-prod-img-box {
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-prod-img-box img {
+            width: 109px;
+        }
+
+
+
+        .cart-prod-time-sort {
+            display: flex;
+        }
+
+
+        .cart-btn-section {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 3px 10px #ebebeb;
+            padding: 23px;
+
+        }
+
+
+
+        .cart-heading {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cart-prod-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart-heading button {
+            border: none;
+            background-color: transparent;
+        }
+
+        .qyt-btn-box button {
+            width: 37px;
+            height: 37px;
+            border: 1px solid #212529;
+            border-radius: 50%;
+        }
+
+        .qyt-btn-box input {
+            width: 58px;
+            margin: 0px 5px;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .remove-item button {
+            background-color: transparent;
+            border: none;
+        }
+
+        .cart-total-value {
+            display: flex;
+            flex-direction: column;
+            margin-left: 371px;
+        }
+
+        .card-subtotal {
+            font-size: 12px;
+            color: #7c7c7c;
+        }
+
+        .card-itmes-value {
+            color: black;
+            font-size: 16px;
+            margin-left: 27px;
+            font-weight: 600;
+        }
+
+        .card-total-save {
+            color: #3afc12;
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 12px;
+        }
+
+        .cart-price {
+            color: black;
+            font-size: 16px;
+
+            font-weight: 600;
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+
+            .cart-btn-section {
+                flex-direction: column;
+            }
+
+            .cart-prod-time-sort {
+                flex-direction: column;
+                order: 1;
+            }
+
+            .cart-prod-info-box {
+                padding-left: 8px;
+            }
+
+            .cart-total-value {
+                margin-left: 0px;
+            }
+
+            .cart-custom {
+                display: flex;
+                justify-content: space-between;
+                padding: 8px 2px;
+            }
+
+            .cart-order {
+                order: 1;
+            }
+
+            .cart-btn-section button {
+                margin-top: 9px;
+            }
+
+            .cart-prod-content {
+                /* justify-content: space-between; */
+                align-items: start;
+                flex-direction: column;
+                
+            }
+
+            .cart-mrp {
+                display: none;
+            }
+
+            .remove-item {
+                order: 3;
+                margin-left: 157px;
+                top: 10;
+                position: absolute;
+                margin-top: 121px;
+                margin-left: 167px;
+            }
+            .qyt-btn-box{
+                order: 2;
+            }
+
+
+        }
     </style>
 </head>
 
@@ -87,83 +284,80 @@
 
     </div>
     <!-- Topbar End -->
-
     <!-- main section -->
 
+    <div class="container mt-5">
+        <div class="cart-heading">
+            <h3>My Cart</h3>
+            <div class="delet-btn">
+                <button>
+                    <i class="fas fa-trash text-primary"></i>
+                    Empty Cart
+                </button>
 
+            </div>
+        </div>
+        <div class="cart-product-container">
+            <div class="cart-detail-main">
+                <div class="cart-prod-img-box"><img src="img/1.jpg" alt="" style="width:100px;"></div>
+                <div class="cart-prod-info-box">
 
-    <section id="aa-product-details">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-product-details-area">
-                        <div class="aa-product-details-content">
-                            <div class="row">
-                                <!-- Modal view slider -->
-                                <div class="col-md-5 col-sm-5 col-xs-12">
-                                    <div class="aa-product-view-slider">
-                                        <div id="demo-1" class="simpleLens-gallery-container">
-                                            <div class="simpleLens-container">
-                                                <div class="simpleLens-big-image-container">
-                                                    <a data-lens-image="img/2.jpg" class="simpleLens-lens-image"><img
-                                                            src="img/2.jpg" class="simpleLens-big-image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="aa-prod-view-bottom">
-                                        <a class="btn btn-red" href="#">Add To Cart</a>
-                                        <a class="btn btn-red" href="#">Buy</a>
-                                    </div>
-                                </div>
-
-                                <!-- Modal view content -->
-                                <div class="col-md-7 col-sm-7 col-xs-12">
-                                    <div class="aa-product-view-content">
-                                        <h3>Engine Oil 5W-30 (3.5L) Syntium 500</h3>
-                                        <div class="aa-price-block">
-                                            <span class="aa-product-view-price ml-0">₹1,399</span>
-                                            <span class="aa-product-view-mrp"> <del> MRP ₹2,015</del></span>
-                                            <span class="discount"> -31% </span>
-                                        </div>
-                                        <p class="aa-product-avilability">In stock</p>
-                                        <div class="aa-prod-quantity">
-                                            <p class="aa-product-brand">
-                                                Brand: <a href="#">BMW</a>
-                                            </p>
-                                        </div>
-                                        <div class="part-info-sec">
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Part Number</span>
-                                                <span class="aa-part-info">ddxyzs2015</span>
-                                            </div>
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Origin</span>
-                                                <span class="aa-part-info">Aftermarket</span>
-                                            </div>
-                                            <div class="aa-modal-block">
-                                                <span class="aa-part-no sm-header">Class</span>
-                                                <span class="aa-part-info">Engine Oil</span>
-                                            </div>
-                                        </div>
-                                        <div class="aa-prod-desciption">
-                                            <h5>Description</h5>
-                                            <p class="">
-                                                Engine Oil for ASHOK LEYLAND, BMW, CHEVROLET, DAEWOO, DATSUN, FORD,
-                                                HONDA, HYUNDAI, JAGUAR, LAMBORGHINI, LAND ROVER - PET5W3...N50035 -
-                                                Petronas - details are
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="cart-prod-name">
+                        <p class="cart-prod-name">Engine Oil 5W-30 (3.5L) Syntium 500</p>
+                        <span>PET5W3...N50035</span>
+                    </div>
+                    <div class="cart-prod-content">
+                        <div class="cart-prod-time-sort">
+                            <div class="cart-same-style mr-3">
+                                <span class="sm-header">Brand:</span>
+                                <span class="status c-black">23-03-2023</span>
+                            </div>
+                            <div class="cart-same-style">
+                                <span class="sm-header">Sold By:</span>
+                                <span class="status c-black">Jaipur/SWA</span>
                             </div>
                         </div>
+                        <div class="qyt-btn-box"><button class="minus bg-light" onclick="minus()">-</button><input
+                                type="text" value="1" id="qyt_value"><button class="plus btn-red"
+                                onclick="plus()">+</button></div>
+                        <div class="cart-price-box">
+                            <div class="price-mrp">
+                                <span class="cart-price">₹1,399</span>
+                                <span class="cart-mrp"> <del>₹1,399</del></span>
+                            </div>
+
+                            <span class="cart-discount">-30%</span>
+                        </div>
+                        <div class="remove-item">
+                            <button>
+                                <i class="fas fa-trash text-primary"></i>
+                            </button>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </section>
+        <div class="cart-btn-section">
+            <button class="btn btn-red cart-order">Continue Shopping</button>
+            <div class="cart-total-value">
+                <div class="cart-custom">
+                    <span class="card-subtotal">SUBTOTAL (1 item)</span>
+                    <span class="card-itmes-value">₹1,399</span>
+                </div>
+                <div class="cart-custom">
+                    <span class="card-subtotal">Total Savings (1 item):</span>
+                    <span class="card-total-save">₹616</span>
+                </div>
+            </div>
+            <button class="btn btn-red">Proceed to checkout</button>
+        </div>
+
+
+
+    </div>
+
+
 
 
 
@@ -253,6 +447,25 @@
 
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        let qyt_value = document.getElementById("qyt_value").value;
+
+        function minus() {
+            if (qyt_value > 1) {
+                qyt_value--;
+                document.getElementById("qyt_value").value = qyt_value
+
+            }
+        }
+        function plus() {
+            qyt_value++;
+            document.getElementById("qyt_value").value = qyt_value
+
+        }
+
+
+    </script>
+
 </body>
 
 </html>
